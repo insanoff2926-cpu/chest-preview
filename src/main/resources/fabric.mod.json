@@ -1,0 +1,20 @@
+{
+	"schemaVersion": 1,
+	"id": "chest-peek",
+	"version": "${version}",
+	"name": "Chest Peek",
+	"description": "Mira un cofre, barril o shulker y ve un resumen de lo que hay dentro.",
+	"authors": ["you"],
+	"license": "CC0-1.0",
+	"environment": "*",
+	"entrypoints": {
+		"main": ["dev.chestpeek.ChestPeek"],
+		"client": ["dev.chestpeek.client.ChestPeekClient"]
+	},
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
