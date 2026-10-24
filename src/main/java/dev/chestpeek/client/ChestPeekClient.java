@@ -52,7 +52,7 @@ public class ChestPeekClient implements ClientModInitializer {
 				&& mc.hitResult instanceof BlockHitResult hit && hit.getType() == HitResult.Type.BLOCK) {
 			BlockPos pos = hit.getBlockPos();
 			if (ChestPeek.isPeekable(mc.level.getBlockState(pos))
-					&& mc.player.distanceToSqr(pos.getCenter()) <= ChestPeek.MAX_DISTANCE * ChestPeek.MAX_DISTANCE) {
+					&& mc.player.distanceToSqr(pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5) <= ChestPeek.MAX_DISTANCE * ChestPeek.MAX_DISTANCE) {
 				target = pos;
 			}
 		}
